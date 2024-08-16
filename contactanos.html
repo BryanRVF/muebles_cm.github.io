@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoración de Cocinas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+       
+    
+</head>
+
+<body>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <br>
+                    <span><i class="fas fa-phone"></i> 981 324 207</span>
+                    <a href="mailto:maycoltorres@marmolygranitoariana.com"><i class="fas fa-envelope"></i><strong> mueblescristian@muebleriaperu.com</strong></a>
+                </div>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: 40px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <br>
+                <img src="imagenes/logosinfondo.png" alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
+            </a>
+            <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio1.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                    </li>
+                </ul>
+                <a href="#contactanos" class="btn btn-contact btn-contact-small">
+                    <i class="fab fa-whatsapp icon-whatsapp"></i> Contáctanos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <div class="header-content">
+        <div class="container">
+            <h1>Decoramos tus cocinas: Reposteros, Tableros y más</h1>
+            <p>Calidad y garantía</p>
+            <a href="#contactanos" class="btn btn-custom">Contáctanos</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Aplica el color cuando el ítem del menú es tocado o cliqueado
+            $('.navbar-nav .nav-item .nav-link').on('touchstart mouseenter', function(){
+                $(this).css('color', '#ff6347'); // Cambia #ff6347 por el color que desees
+            });
+            
+            // Opcional: Restablece el color cuando el ítem ya no está siendo tocado
+            $('.navbar-nav .nav-item .nav-link').on('touchend mouseleave', function(){
+                $(this).css('color', '#ffffff'); // Cambia #ffffff por el color original
+            });
+        });
+    </script>
+
+               
+
+<style>
+.header-content {
+    background-image: url('fotos/closet1.png'); /* Reemplaza con la URL de la imagen de fondo */
+  
+}
+
+.block {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    
+}
+
+#section1 {
+    background-color: #999999;
+}
+
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+</style>
+
+   
+    <style>
+/* Reset de márgenes y padding para consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Sección de características */
+.features-section {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.features-container {
+    
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    color: #fff; /* Cambia el color del texto a blanco para mejor visibilidad */
+}
+.feature-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%; /* Ancho de cada caja para que entren 4 en una fila */
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 250px; /* Altura fija para mantener uniformidad entre las cajas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-box:hover {
+    border-color: #ffaf00; /* Color dorado en el borde al pasar el mouse */
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    
+    flex-grow: 1;
+}
+
+/* Responsive Design */
+
+/* Ajustes para pantallas medianas (tabletas y dispositivos de tamaño similar) */
+@media (max-width: 768px) {
+    .features-section {
+        flex-wrap: wrap; /* Permite que las cajas se muevan a la siguiente línea si no hay espacio */
+    }
+
+    .feature-box {
+        width: 45%; /* Ancho del 45% para que entren dos cajas por fila */
+        margin-bottom: 20px; /* Espacio entre filas */
+    }
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos móviles y dispositivos de tamaño similar) */
+@media (max-width: 480px) {
+    .feature-box {
+        width: 100%; /* Ancho del 100% para que cada caja ocupe toda la fila */
+    }
+
+    .icon img {
+        width: 40px; /* Reducir el tamaño del icono */
+        height: 40px;
+    }
+
+    h3 {
+        font-size: 18px; /* Reducir el tamaño de la fuente del título */
+    }
+
+    p {
+        font-size: 14px; /* Reducir el tamaño de la fuente del texto */
+    }
+   
+
+
+
+}
+
+</style>
+
+
+
+
+</head>
+
+ <div class="container my-5">
+
+
+<p>
+   <h1> Tiene alguna pregunta?</h1>
+Estamos para atenderlo Muchas gracias por su interés en
+ nuestra empresa y nuestros servicios y si tiene alguna pregunta, 
+ por favor póngase en contacto ahora!</p> 
+
+ <h1>Datos De Contacto</h1> <p>
+    
+Solicite nuestra asesoría
+No sólo compare precio, también el servicio, el trato, la calidad de los trabajos 
+a realizar y la profesionalidad. Le presentaremos un proyecto/presupuesto,
+ ajustado y acorde a tus necesidades.</p>
+ <br>
+ <br>
+
+</di>
+
+<hr>
+
+<br>
+
+<style>
+  .contact-section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f4f6f9;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajusta la separación general */
+  }
+  .map-container {
+  flex: 1;
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+  order: 1;
+}
+  
+  .map-container iframe {
+  width: 100%;
+  height: 400px; /* Aumenta la altura del mapa */
+  min-height: 400px; /* Aumenta la altura mínima del mapa en dispositivos pequeños */
+  border: 0;
+}
+
+  
+  .contact-info {
+    flex: 1;
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .contact-item {
+    background-color: #fff;
+    padding: 20px; /* Ajusta el padding si es necesario */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-basis: 100%; /* Ajuste para pantallas pequeñas */
+    max-width: 100%; /* Asegura que el ancho máximo sea 100% del contenedor padre */
+  }
+  
+  .contact-item.large-item {
+    flex-basis: 100%; /* Ajuste para pantallas pequeñas */
+    max-width: 100%; /* Asegura que el ancho máximo sea 100% del contenedor padre */
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+  
+  .contact-item h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .contact-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .orange-line {
+    width: 10px;
+    height: 100%;
+    background-color: #ff6600;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 10px 10px 0;
+  }
+ 
+@media (max-width: 767px) {
+  .contact-section {
+    flex-direction: column; /* En pantallas pequeñas, muestra el mapa encima del texto */
+  }
+
+  .map-container {
+    width: 100%;
+    margin-bottom: 20px; /* Ajusta el espacio entre el mapa y el texto */
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .map-container iframe {
+    height: 300px; /* Ajusta la altura del mapa en pantallas pequeñas */
+  }
+}
+  
+  @media (min-width: 1200px) {
+    .contact-item {
+      padding: 30px; /* Ajusta el padding en pantallas grandes */
+    }
+  
+    .contact-item h4 {
+      font-size: 20px;
+    }
+  
+    .contact-item p {
+      font-size: 16px;
+    }
+  
+    .contact-item img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  </style>
+  
+
+
+
+  
+
+<section class="contact-section">
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9939360795584!2d-77.14143238528293!3d-12.05978779145913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf8bbfb9f9b1%3A0x74e3b2469b8f2a5f!2sJr.%20Francisco%20Bolognesi%20355%2C%20Carmen%20de%20La%20Legua-Reynoso%2017021%2C%20Peru!5e0!3m2!1sen!2sus!4v1691618762711!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="contact-info">
+    <div class="contact-item">
+      <div class="icon-text">
+        <img src="fotos/ubicacion1.png" alt="Ubicación">
+        <div>
+          <h4>Ubicación</h4>
+          <p>Bolognesi 355, Callao</p>
+        </div>
+      </div>
+      <div class="orange-line"></div>
+    </div>
+    <div class="contact-item">
+      <div class="icon-text">
+        <img src="fotos/ubicacion2.png" alt="Teléfono">
+        <div>
+          <h4>Teléfono</h4>
+          <p>+51923-955-998<br>+51905-453-579</p>
+        </div>
+      </div>
+      <div class="orange-line"></div>
+    </div>
+    <div class="contact-item">
+      <div class="icon-text">
+        <img src="fotos/ubicacion3.png" alt="Correo Electrónico">
+        <div>
+          <h4>Correo Electrónico</h4>
+          <p>operaciones@segvisac.com</p>
+        </div>
+      </div>
+      <div class="orange-line"></div>
+    </div>
+</div>
+</div>
+
+</section>
+
+    
+    <hr>
+
+<body>
+<style>
+/* Reset de márgenes y padding para consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Sección de la solicitud de cotización */
+.quote-request-section {
+    background-color: #2d3e50; /* Color azul oscuro */
+    padding: 50px 0; /* Espaciado superior e inferior */
+    color: white; /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido */
+}
+
+.quote-form-container {
+    background-color: #f95d22; /* Color naranja */
+    padding: 40px;
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el contenedor del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+.form-group {
+    display: flex;
+    gap: 15px; /* Espacio entre los campos de la misma fila */
+}
+
+input, textarea {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+    background-color: #2d3e50; /* Color del botón (mismo que el fondo) */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Responsive Design */
+
+/* Ajustes para pantallas medianas (tabletas y dispositivos de tamaño similar) */
+@media (max-width: 768px) {
+    .quote-form-container {
+        padding: 30px; /* Reducir el padding para dispositivos más pequeños */
+    }
+    
+    h2 {
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+    
+    h3 {
+        font-size: 22px; /* Reducir el tamaño de la fuente */
+    }
+    
+    .form-group {
+        flex-direction: column; /* Apilar los campos verticalmente en lugar de horizontalmente */
+        gap: 10px; /* Reducir el espacio entre los campos */
+    }
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos móviles y dispositivos de tamaño similar) */
+@media (max-width: 480px) {
+    .quote-form-container {
+        padding: 20px; /* Reducir aún más el padding */
+        max-width: 100%; /* Permitir que el formulario ocupe todo el ancho de la pantalla */
+    }
+    
+    h2 {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+    
+    h3 {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+    }
+    
+    input, textarea {
+        padding: 8px; /* Reducir el padding dentro de los campos */
+    }
+    
+    button {
+        padding: 12px; /* Reducir el padding del botón */
+        font-size: 14px; /* Reducir el tamaño de la fuente del botón */
+    }
+}
+
+</style>
+<!-- Sección para el formulario de solicitud de cotización -->
+<section class="quote-request-section">
+        <div class="quote-form-container">
+            <h2>Estamos dispuesto a atenderlo, en todo momento.</h2>
+            <h3>SOLICITUD DE COTIZACIÓN</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Teléfono / WhatsApp" required>
+                  
+                </div>
+                <textarea placeholder="Deje su Consulta" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+
+
+
+<div class="container my-5">
+  <footer class="footer ">
+    <div class="container-responsive text-center">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h5>Informes</h5>
+                <p>
+                    Av. Humboldt, Alfonso Ugarte 3ra etapa Mz A Lote 3 Gregorio<br>
+                    Albarracín Lanchipa, Tacna, Perú<br>
+                    <p><i class="fas fa-phone-alt"></i> CEL: 998224145</p>
+                    <p><i class="fas fa-phone-alt"></i> CEL: 998224145</p>
+                    <p><i class="fas fa-envelope"></i> CORREO: MELAMINACRISTIAN@GMAIL.COM</p>
+                </p>
+            </div>
+            <div class="col-md-6 " >
+                <h5>Redes Sociales</h5>
+                <p>
+                    Instagram: MueblesChristian<br><br>
+                    WhatsApp: 923 711 418<br><br>
+                    Facebook: Muebles Christian
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </div>
+</html>
+
